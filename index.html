@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>IMC Calculator</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+   <div id="container">
+      <h1 id="title">IMC Calculator</h1>
+      <form>
+         
+            <div id="div-gender" class="campo-container">
+               <h3>Sexo</h3>
+               <div id="gender-inputs">
+                  <input type="radio" name="gender" value="m" id="male" checked>
+                  <label for="male">MASCULINO</label>
+                  <input type="radio" name="gender" value="f" id="female">
+                  <label for="female">FEMININO</label>
+               </div>
+            </div>
+
+            <!-- <div id="divIdade" class="campo-container">
+               <label for="idade">IDADE</label>
+               <input placeholder="Insira sua idade" type="number" id="idade" name="idade">
+            </div> -->
+
+            <div id="divAltura" class="campo-container">
+               <label for="altura">ALTURA</label>
+               <input placeholder="Insira sua altura" type="number" id="altura">
+            </div>
+
+            <div id="divPeso" class="campo-container">
+               <label for="peso">PESO</label>
+               <input placeholder="Insira seu peso" type="number" id="peso" name="peso">
+            </div>
+            <div id="buttons">
+               <div class="button" id="calcular">Calcular</div>
+               <div class="button" onclick="window.location.reload()">Resetar</div>
+            </div>
+            <div id="resultado"></div>
+      </form>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
